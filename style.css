@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-color: rgb(241, 237, 237);
+}
+
+/* configuração da parte de navegação do site */
+header {
+    background-color: rgb(8, 192, 184);
+    padding: 10px;
+    
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 18em;
+    height: 5em;
+
+}
+
+.navegador a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    
+    
+}
+
+.navegador a:hover {
+    color: blueviolet;
+}
+
+.lista-nav {
+    display: flex;
+    margin: 10px;
+    column-gap: 30px;   
+    list-style: none;
+    text-transform: none; 
+    
+    
+}
+
+
+/* configuração da parte principal (Banner) */
+main {
+    background: url(img/instrumentos.jpg);
+    background-size: 85em;
+    background-position: center;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    
+   
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-principal {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: blueviolet;
+    text-align: center;
+    
+}
+
+.texto-secundario {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color:blueviolet;
+    text-transform: uppercase;
+    
+}
+
+.botao {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+
+}
+
+.bt-unidades {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(8, 192, 184);
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+/* configuração dos titulos entre assuntos */
+
+.titulo-secao {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: rgb(8, 192, 184);
+    font-size: 50px;
+    font-style: italic;
+    font-family: "Sarala", sans-serif; 
+}
+
+.texto-secao {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Sarala", sans-serif;
+    margin-bottom: 100px;
+}
+
+/* configuração da seção SOBRE */
+.titulo-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(225, 248, 237);
+}
+
+.texto-sobre {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Sarala", sans-serif;
+}
+
+.foto-sobre {
+    width: 50%;
+    margin-left: 20px;
+}
+
+/* Configuração TRATAMENTOS */
+
+.tipos-tratamentos {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    align-content: center;
+    row-gap: 30px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    margin: 10px;
+  
+
+}
+
+.texto-clinico-geral h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto-clinico-geral {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.clinico-geral img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+}
+
+.clinico-geral {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    border: 1px solid rgb(8, 192, 184);
+    border-radius: 10px;
+    font-family: "Sarala", sans-serif;
+    text-align: center;
+}
+
+.texto-proteses h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto-proteses {
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.proteses img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+}
+
+
+.proteses {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(8, 192, 184);
+    border-radius: 10px;
+    font-family: "Sarala", sans-serif;
+    text-align: center;    
+}
+
+.texto-implantes h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto-implantes {
+    margin-right: 30px;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.implantes img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+}
+
+.implantes {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(8, 192, 184);
+    border-radius: 10px;
+    font-family: "Sarala", sans-serif;
+    text-align: center;
+}
+
+.texto-clareamentos h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto-clareamentos {
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.clareamentos img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+    
+}
+
+.clareamentos {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(8, 192, 184);
+    border-radius: 10px;
+    font-family: "Sarala", sans-serif;
+    text-align: center;
+   
+}
+
+.texto-ortodontia h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto-ortodontia {
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ortodontia img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+    
+}
+
+.ortodontia {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(8, 192, 184);
+    border-radius: 10px;
+    font-family: "Sarala", sans-serif;
+    text-align: center;
+}
+
+.texto-odonto-pediatria h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto-odonto-pediatria {
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Sarala", sans-serif;
+    text-align: center;
+}
+
+.odonto-pediatria img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+    
+}
+
+.odonto-pediatria {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(8, 192, 184);
+    border-radius: 10px;
+    box-shadow: #888;   
+} 
+
+.botao-tratamentos {
+    margin-left: 25%;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(8, 192, 184);
+    font-weight: bold;   
+}
+
+/* Configuração Profissionais */
+
+.dados-profissionais {
+    display: flex; 
+    width: 600px;  
+}
+
+.resumo-profissional {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Sarala", sans-serif;
+    margin: 10px;   
+}
+
+.dados-thais {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 50%;
+    margin-left: 20px;
+
+}
+
+.dados-thais img {
+    width: 15em;
+    border-radius: 160px;
+    margin-top: 80px;
+}
+
+.dados-thais h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.dados-bianca {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.dados-bianca img {
+    width: 15em;
+    border-radius: 160px;
+    margin-top: 80px;
+}
+
+.dados-bianca h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+
+/* Configuração Clinicas */
+
+.texto-clinicas {
+    margin-bottom: 50px;
+    font-family: "Sarala", sans-serif;
+}
+
+.dados-clinicas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    row-gap: 10px;
+    
+}
+
+.clinica-1 {
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+    background: rgb(3, 182, 173);
+  
+}
+
+.titulo-endereco {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Sarala", sans-serif;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+.horario-atendimento {
+    font-size: 20px;
+    font-family: "Sarala", sans-serif;
+    font-style: italic;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.endereco {
+    font-size: 20px;
+    font-family: "Sarala", sans-serif;
+    font-style: italic;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.clinica-1 img {
+    width: 300px;
+}
+
+
+.clinica-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Sarala", sans-serif;
+    color: white;
+    padding:30px;
+    background: rgb(3, 182, 173);
+}
+
+.clinica-2 img {
+    width: 300px;
+}
+
+
+
+/* Configurações de formulário */
+
+
+/* configuração whatsapp */
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
